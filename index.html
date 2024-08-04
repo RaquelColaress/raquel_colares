@@ -1,0 +1,728 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="UTF-8">
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge"><script async="" src="js/ana.min.js"></script><script async="" src="js/analytics.js"></script><script async="" src="js/gtm.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-1173a7bb9742e987ab2",applicationID:"765085969"};;/*! For license information please see nr-loader-rum-1.263.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={2983:(e,t,r)=>{"use strict";r.d(t,{D0:()=>m,gD:()=>y,Vp:()=>s,fr:()=>S,jD:()=>j,hR:()=>x,xN:()=>b,x1:()=>c,aN:()=>R,V:()=>I});var n=r(384),i=r(7864);const o={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.a)(t,o);const r=(0,n.nY)(e);r&&(r.info=a[e])}var u=r(993);const l=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(2614),f=r(944);const g="[data-nr-mask]",p=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},feature_flags:[],harvest:{tooManyRequestsDelay:60},jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},logging:{enabled:!0,harvestTimeSeconds:10,autoStart:!0,level:u.p_.INFO},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){l(t)?e.mask_selector="".concat(t,",").concat(g):""===t||null===t?e.mask_selector=g:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){l(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},ssl:void 0}},h={},v="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(v);if(!h[e])throw new Error("Configuration for ".concat(e," was never set"));return h[e]}function b(e,t){if(!e)throw new Error(v);h[e]=(0,i.a)(t,p());const r=(0,n.nY)(e);r&&(r.init=h[e])}function y(e,t){if(!e)throw new Error(v);var r=m(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const w={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function R(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.a)(t,w);const r=(0,n.nY)(e);r&&(r.loader_config=A[e])}const x=(0,n.dV)().o;var E=r(6154),_=r(9324);const N={buildEnv:_.F3,distMethod:_.Xs,version:_.xv,originTime:E.WN},T={customTransaction:void 0,disabled:!1,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,onerror:void 0,origin:""+E.gm.location,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,denyList:void 0,harvestCount:0,timeKeeper:void 0},k={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!k[e])throw new Error("Runtime for ".concat(e," was never set"));return k[e]}function I(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");k[e]={...(0,i.a)(t,T),...N};const r=(0,n.nY)(e);r&&(r.runtime=k[e])}function j(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},7864:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>o,xv:()=>n});const n="1.263.0",i="PROD",o="CDN"},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,Vr:()=>d,WN:()=>f,bv:()=>o,gm:()=>a,lT:()=>l,mw:()=>s,sb:()=>u});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,o="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s=Boolean("hidden"===a?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),u=c&&"undefined"==typeof SharedWorker,l=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(i&&window.document.documentMode)),d=!!a.navigator?.sendBeacon,f=Date.now()-(0,n.t)()},4777:(e,t,r)=>{"use strict";r.d(t,{J:()=>o});var n=r(944);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.R)(8);this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.R)(9,e)}}}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>c,Ze:()=>d,x3:()=>u});var n=r(7836),i=r(1478),o=r(3606),a=r(860);const s={};function c(e,t){const r={staged:!1,priority:a.P[t]||0};l(e),s[e].get(t)||s[e].set(t,r)}function u(e,t){e&&s[e]&&(s[e].get(t)&&s[e].delete(t),g(e,t,!1),s[e].size&&f(e))}function l(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(l(e),!e||!s[e].get(t)||r)return g(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=Array.from(s[e]);t.every((e=>{let[t,r]=e;return r.staged}))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((t=>{let[r]=t;s[e].delete(r),g(e,r)})))}function g(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];const a=e?n.ee.get(e):n.ee,s=o.i.handlers;if(!a.aborted&&a.backlog&&s){if(r){const e=a.backlog[t],r=s[t];if(r){for(let t=0;e&&t<e.length;++t)p(e[t],r);(0,i.$)(r,(function(e,t){(0,i.$)(t,(function(t,r){r[0].on(e,r[1])}))}))}}a.isolatedBacklog||delete s[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function p(e,t){var r=e[1];(0,i.$)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>c,ee:()=>u});var n=r(384),i=r(8990),o=r(2983),a=r(2646),s=r(5607);const c="nr@context:".concat(s.W),u=function e(t,r){var n={},s={},l={},d=!1;try{d=16===r.length&&(0,o.fr)(r).isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=g(n),c=h(e),l=c.length,d=0;d<l;d++)c[d].apply(a,r);var p=m()[s[e]];p&&p.push([f,e,r,a]);return a},get:v,listeners:h,context:g,buffer:function(e,t){const r=m();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!m()[s[e]]},debugId:r,backlog:d?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:d};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,c,(()=>new a.y(c))):new a.y(c)}function p(e,t){n[e]=h(e).concat(t)}function h(e){return n[e]||[]}function v(t){return l[t]=l[t]||e(f,t)}function m(){return f.backlog}}(void 0,"globalEE"),l=(0,n.Zm)();l.ee||(l.ee=u)},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>o});var n=r(9908);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.d,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.d);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";r.d(t,{DD:()=>c,jT:()=>a,sp:()=>s});var n=r(6154);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n.gm.addEventListener("test",null,e),n.gm.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>a,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>o});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.debug&&console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t)}r.d(t,{R:()=>n})},5284:(e,t,r)=>{"use strict";r.d(t,{t:()=>c,B:()=>s});var n=r(7836),i=r(6154);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{i.gm.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389:(e,t,r)=>{"use strict";function n(e){var t=this;let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:500,n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};const i=n?.leading||!1;let o;return function(){for(var n=arguments.length,a=new Array(n),s=0;s<n;s++)a[s]=arguments[s];i&&void 0===o&&(e.apply(t,a),o=setTimeout((()=>{o=clearTimeout(o)}),r)),i||(clearTimeout(o),o=setTimeout((()=>{e.apply(t,a)}),r))}}function i(e){var t=this;let r=!1;return function(){if(!r){r=!0;for(var n=arguments.length,i=new Array(n),o=0;o<n;o++)i[o]=arguments[o];e.apply(t,i)}}}r.d(t,{J:()=>i,s:()=>n})},1478:(e,t,r)=>{"use strict";r.d(t,{$:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,sB:()=>a});var n=r(3878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.sp)("load",e,t)}function a(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>l,Zm:()=>a,bQ:()=>c,dV:()=>s,nY:()=>u,pV:()=>d});var n=r(6154),i=r(1863);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function s(){let e=a();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function l(e,t){a()[e]=t}function d(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},2843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(3878);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3434:(e,t,r)=>{"use strict";r.d(t,{YM:()=>c});var n=r(7836),i=r(5607);const o="nr@original:".concat(i.W);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];l(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return l(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,l,d;try{a=this,o=[...arguments],l="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],l],e)}i(r+"start",[o,a,s],l,c);try{return d=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],l,c),e}finally{i(r+"end",[o,a,d],l,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function l(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}},993:(e,t,r)=>{"use strict";r.d(t,{ET:()=>o,p_:()=>i});var n=r(860);const i={ERROR:"ERROR",WARN:"WARN",INFO:"INFO",DEBUG:"DEBUG",TRACE:"TRACE"},o="log";n.K.logging},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>s,rs:()=>i,xV:()=>a,z_:()=>o});const n=r(860).K.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K.pageViewTiming},6344:(e,t,r)=>{"use strict";r.d(t,{G4:()=>i});var n=r(2614);r(860).K.sessionReplay;const i={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"};n.g.ERROR,n.g.FULL,n.g.OFF},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(7836);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},2266:(e,t,r)=>{"use strict";r.d(t,{j:()=>k});var n=r(860),i=r(2983),o=r(9908),a=r(7836),s=r(1687),c=r(5289),u=r(6154),l=r(944),d=r(3969),f=r(384),g=r(6344);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start",g.G4.RECORD,g.G4.PAUSE,"log","wrapLogger"],h=["setErrorHandler","finished","addToTrace","addRelease"];var v=r(1863),m=r(2614),b=r(993);var y=r(2646),w=r(3434);function A(e,t,r,n){if("object"!=typeof t||!t||"string"!=typeof r||!r||"function"!=typeof t[r])return(0,l.R)(29);const i=function(e){return(e||a.ee).get("logger")}(e),o=(0,w.YM)(i),s=new y.y(a.P);return s.level=n.level,s.customAttributes=n.customAttributes,o.inPlace(t,[r],"wrap-logger-",s),i}function R(){const e=(0,f.pV)();p.forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e&&e.api?e.exposed&&e.api[t]&&o.push(e.api[t](...n)):(0,l.R)(38,t)})),o.length>1?o:o[0]}(t,...n)}}))}const x={};function E(e,t){let f=arguments.length>2&&void 0!==arguments[2]&&arguments[2];t||(0,s.Ak)(e,"api");const p={};var y=a.ee.get(e),w=y.get("tracer");x[e]=m.g.OFF,y.on(g.G4.REPLAY_RUNNING,(t=>{x[e]=t}));var R="api-",E=R+"ixn-";function _(t,r,n,o){const a=(0,i.Vp)(e);return null===r?delete a.jsAttributes[t]:(0,i.x1)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),k(R,n,!0,o||null===r?"session":void 0)(t,r)}function N(){}p.log=function(e){let{customAttributes:t={},level:r=b.p_.INFO}=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};(0,o.p)(d.xV,["API/log/called"],void 0,n.K.metrics,y),function(e,t){let r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{},i=arguments.length>3&&void 0!==arguments[3]?arguments[3]:b.p_.INFO;(0,o.p)(d.xV,["API/logging/".concat(i.toLowerCase(),"/called")],void 0,n.K.metrics,e),(0,o.p)(b.ET,[(0,v.t)(),t,r,i],void 0,n.K.logging,e)}(y,e,t,r)},p.wrapLogger=function(e,t){let{customAttributes:r={},level:i=b.p_.INFO}=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};(0,o.p)(d.xV,["API/wrapLogger/called"],void 0,n.K.metrics,y),A(y,e,t,{customAttributes:r,level:i})},h.forEach((e=>{p[e]=k(R,e,!0,"api")})),p.addPageAction=k(R,"addPageAction",!0,n.K.pageAction),p.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.fr)(e).customTransaction=(r||"http://custom.transaction")+t,k(R,"setPageViewName",!0)()},p.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return _(e,t,"setCustomAttribute",r);(0,l.R)(40,typeof t)}else(0,l.R)(39,typeof e)},p.setUserId=function(e){if("string"==typeof e||null===e)return _("enduser.id",e,"setUserId",!0);(0,l.R)(41,typeof e)},p.setApplicationVersion=function(e){if("string"==typeof e||null===e)return _("application.version",e,"setApplicationVersion",!1);(0,l.R)(42,typeof e)},p.start=()=>{try{(0,o.p)(d.xV,["API/start/called"],void 0,n.K.metrics,y),y.emit("manual-start-all")}catch(e){(0,l.R)(23,e)}},p[g.G4.RECORD]=function(){(0,o.p)(d.xV,["API/recordReplay/called"],void 0,n.K.metrics,y),(0,o.p)(g.G4.RECORD,[],void 0,n.K.sessionReplay,y)},p[g.G4.PAUSE]=function(){(0,o.p)(d.xV,["API/pauseReplay/called"],void 0,n.K.metrics,y),(0,o.p)(g.G4.PAUSE,[],void 0,n.K.sessionReplay,y)},p.interaction=function(e){return(new N).get("object"==typeof e?e:{})};const T=N.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(d.xV,["API/createTracer/called"],void 0,n.K.metrics,y),f||(0,o.p)(E+"tracer",[(0,v.t)(),e,r],i,n.K.spa,y),function(){if(w.emit((a?"":"no-")+"fn-start",[(0,v.t)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){const t="string"==typeof e?new Error(e):e;throw w.emit("fn-err",[arguments,this,t],r),t}finally{w.emit("fn-end",[(0,v.t)()],r)}}}};function k(e,t,r,i){return function(){return(0,o.p)(d.xV,["API/"+t+"/called"],void 0,n.K.metrics,y),i&&(0,o.p)(e+t,[(0,v.t)(),...arguments],r?null:this,i,y),r?void 0:this}}function S(){r.e(296).then(r.bind(r,8778)).then((t=>{let{setAPI:r}=t;r(e),(0,s.Ze)(e,"api")})).catch((e=>{(0,l.R)(27,e),y.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{T[e]=k(E,e,void 0,f?n.K.softNav:n.K.spa)})),p.setCurrentRouteName=f?k(E,"routeName",void 0,n.K.softNav):k(R,"routeName",!0,n.K.spa),p.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,o.p)(d.xV,["API/noticeError/called"],void 0,n.K.metrics,y),(0,o.p)("err",[t,(0,v.t)(),!1,r,!!x[e]],void 0,n.K.jserrors,y)},u.RI?(0,c.GG)((()=>S()),!0):S(),p}var _=r(5284);const N=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let T=!1;function k(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},r=arguments.length>2?arguments[2]:void 0,n=arguments.length>3?arguments[3]:void 0,{init:o,info:a,loader_config:s,runtime:c={loaderType:r},exposed:l=!0}=t;const d=(0,f.pV)();a||(o=d.init,a=d.info,s=d.loader_config),(0,i.xN)(e.agentIdentifier,o||{}),(0,i.aN)(e.agentIdentifier,s||{}),a.jsAttributes??={},u.bv&&(a.jsAttributes.isWorker=!0),(0,i.x1)(e.agentIdentifier,a);const g=(0,i.D0)(e.agentIdentifier),p=[a.beacon,a.errorBeacon];T||(g.proxy.assets&&(N(g.proxy.assets),p.push(g.proxy.assets)),g.proxy.beacon&&p.push(g.proxy.beacon),R(),(0,f.US)("activatedFeatures",_.B),e.runSoftNavOverSpa&&=!0===g.soft_navigations.enabled&&g.feature_flags.includes("soft_nav")),c.denyList=[...g.ajax.deny_list||[],...g.ajax.block_internal?p:[]],c.ptid=e.agentIdentifier,(0,i.V)(e.agentIdentifier,c),void 0===e.api&&(e.api=E(e.agentIdentifier,n,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=l),T=!0}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{K:()=>n,P:()=>i});const n={ajax:"ajax",jserrors:"jserrors",logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.spa]:5,[n.ajax]:6,[n.sessionTrace]:7,[n.pageAction]:8,[n.softNav]:9,[n.sessionReplay]:10,[n.logging]:11}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.263.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.263.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),l=0;l<u.length;l++){var d=u[l];if(d.getAttribute("src")==r||d.getAttribute("data-webpack")==t+o){s=d;break}}if(!s){c=!0;var f={296:"sha512-TBs8pRY/W1e4YzgroQONE2LdGjV5O7juw1SF7NvOnee+rj/znproh6CPX2kHL0dyqMqLl4mpTclA+3nAiAWZaQ=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={840:0,374:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.263.0.PROD"]=self["webpackChunk:NRBA-1.263.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(944),t=i(6344),r=i(9566),n=i(7836);class o{agentIdentifier;constructor(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:(0,r.LA)(16);this.agentIdentifier=e,this.ee=n.ee.get(e)}#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.R)(35,t)}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e(t.G4.RECORD)}pauseReplay(){return this.#e(t.G4.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}log(e,t){return this.#e("logInfo",e,t)}wrapLogger(e,t,r){return this.#e("wrapLogger",e,t,r)}}var a=i(860),s=i(2983);const c=Object.values(a.K);function u(e){const t={};return c.forEach((r=>{t[r]=function(e,t){return!0===(0,s.gD)(t,"".concat(e,".enabled"))}(r,e)})),t}var l=i(2266);var d=i(1687),f=i(4234),g=i(5289),p=i(6154);const h=e=>p.RI&&!0===(0,s.gD)(e,"privacy.cookies_enabled");function v(e){return!!s.hR.MO&&h(e)&&!0===(0,s.gD)(e,"session_trace.enabled")}var m=i(6389);class b extends f.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=n,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,s.gD)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto?(0,d.Ak)(e,r):this.ee.on("manual-start-all",(0,m.J)((()=>{(0,d.Ak)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()})))}importAggregator(){let t,r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;this.onAggregateImported=new Promise((e=>{t=e}));const n=async()=>{let n;try{if(h(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(296).then(i.bind(i,2987));n=e(this.agentIdentifier)}}catch(t){(0,e.R)(20,t),this.ee.emit("internal-error",[t]),this.featureName===a.K.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,n))return(0,d.Ze)(this.agentIdentifier,this.featureName),void t(!1);const{lazyFeatureLoader:e}=await i.e(296).then(i.bind(i,6103)),{Aggregate:o}=await e(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,r),t(!0)}catch(r){(0,e.R)(34,r),this.abortHandler?.(),(0,d.Ze)(this.agentIdentifier,this.featureName,!0),t(!1),this.ee&&this.ee.abort()}};p.RI?(0,g.GG)((()=>n()),!0):n()}#t(e,t){switch(e){case a.K.sessionReplay:return v(this.agentIdentifier)&&!!t;case a.K.sessionTrace:return!!t;default:return!0}}}var y=i(6630);class w extends b{static featureName=y.T;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,y.T,r),this.importAggregator()}}var A=i(4777),R=i(1478);class x extends A.J{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,R.$)(e,(function(e,r){t[e]=E(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,R.$)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=E(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=_(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=E(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=Object.values(this.aggregatedData[r]||{}),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function E(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=_(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function _(e){return{t:e,min:e,max:e,sos:e*e,c:1}}var N=i(384);var T=i(9908),k=i(2843),S=i(3878),I=i(782),j=i(1863);class O extends b{static featureName=I.T;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.T,r),p.RI&&((0,k.u)((()=>(0,T.p)("docHidden",[(0,j.t)()],void 0,I.T,this.ee)),!0),(0,S.sp)("pagehide",(()=>(0,T.p)("winPagehide",[(0,j.t)()],void 0,I.T,this.ee))),this.importAggregator())}}var P=i(3969);class D extends b{static featureName=P.TZ;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.TZ,r),this.importAggregator()}}new class extends o{constructor(t,r){super(r),p.gm?(this.sharedAggregator=new x({agentIdentifier:this.agentIdentifier}),this.features={},(0,N.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(w),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===a.K.softNav)),(0,l.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=u(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>a.P[e.featureName]-a.P[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==a.K.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===a.K.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===a.K.softNav)return;(function(e){switch(e){case a.K.ajax:return[a.K.jserrors];case a.K.sessionTrace:return[a.K.ajax,a.K.pageViewEvent];case a.K.sessionReplay:return[a.K.sessionTrace];case a.K.pageViewTiming:return[a.K.pageViewEvent];default:return[]}})(r.featureName).every((e=>e in this.features))||(0,e.R)(36,r.featureName),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}))}catch(t){(0,e.R)(22,t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,N.Zm)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[w,O,D],loaderType:"lite"})})()})();</script>
+
+<link rel="preload" href="https://cdn.yampi.io/rocket/css/global.css?id=0df845ae269748be635c" as="style">
+<link rel="preload" href="https://cdn.yampi.io/rocket/css/themes/rocket.css?id=a072d0d5c66f7276e386" as="style">
+
+<link rel="preconnect" crossorigin="" href="https://cdn.yampi.io">
+<link rel="preconnect" crossorigin="" href="https://api.dooki.com.br">
+<link rel="preconnect" crossorigin="" href="https://api.yampi.io">
+<link rel="preconnect" crossorigin="" href="https://images.yampi.io">
+<link rel="preconnect" crossorigin="" href="https://images.yampi.me">
+<link rel="preconnect" crossorigin="" href="https://fonts.gstatic.com">
+<link rel="preconnect" crossorigin="" href="https://fonts.googleapis.com">
+<link rel="preconnect" crossorigin="" href="//bam.nr-data.net">
+<link rel="preconnect" crossorigin="" href="//www.facebook.com">
+
+<link href="//king-assets.yampi.me" rel="dns-prefetch">
+<link href="//awesome-assets.yampi.me" rel="dns-prefetch">
+<link href="//api.mercadopago.com" rel="dns-prefetch">
+<link href="//www.mercadopago.com" rel="dns-prefetch">
+<link href="//www.google-analytics.com" rel="dns-prefetch">
+<link href="//www.googleadservices.com" rel="dns-prefetch">
+<link href="//googleads.g.doubleclick.net" rel="dns-prefetch">
+<link href="//bat.bing.com" rel="dns-prefetch">
+<link href="//connect.facebook.net" rel="dns-prefetch">
+<link href="//staticxx.facebook.com" rel="dns-prefetch">
+<link href="//static.xx.fbcdn.net" rel="dns-prefetch">
+<link href="//s3.amazonaws.com" rel="dns-prefetch">
+<link href="//manager.smartlook.com" rel="dns-prefetch">
+<link href="//vars.hotjar.com" rel="dns-prefetch">
+<link href="//dis.us.criteo.com" rel="dns-prefetch">
+<link href="https://bam.nr-data.net" rel="dns-prefetch">
+<link href="https://stats.g.doubleclick.net" rel="dns-prefetch">
+<link href="https://connect.facebook.net" rel="dns-prefetch">
+
+<link rel="preload" as="image" href="https://images.yampi.me/assets/stores/instalove/uploads/logo/667addae02a8b.jpeg">
+
+
+<link rel="preload" as="image" href="https://images.yampi.io/B1468XF9uHbLO6qcu10LCO8sayU=/fit-in/275x275/filters:background_color(white):upscale()/https://images.yampi.me/assets/stores/instalove/uploads/images/pack-videos-raquel-colares-18-64-videos-6684c9f6d3aaa-large.jpeg">
+<!-- Minimal -->
+<link rel="icon" type="image/png" href="">
+<link rel="icon" sizes="192x192" href="">
+<link rel="apple-touch-icon" href="">
+<meta name="msapplication-square310x310logo" content="">
+
+<!-- Apple -->
+<link rel="apple-touch-icon" href="">
+<link rel="apple-touch-icon" sizes="76x76" href="">
+<link rel="apple-touch-icon" sizes="120x120" href="">
+<link rel="apple-touch-icon" sizes="152x152" href="">
+
+<link rel="manifest" href="/manifest.json">
+
+<script defer="" src="js/manifest.js"></script>
+<script defer="" src="js/vendor.js"></script>
+<script defer="" src="js/app.js"></script>
+
+<!-- robots -->
+<meta name="robots" content="index,follow">
+
+<!-- meta tags -->
+
+<title>Raquel Colares</title>
+<meta name="description" content="instalove">
+<link rel="canonical" href="https://go.tribopay.com/xem7t">
+<meta property="og:title" content="Raquel Colares">
+<meta property="og:description" content="instalove">
+
+<meta name="twitter:title" content="Raquel Colares">
+<meta name="twitter:description" content="instalove">
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"WebPage","name":"Raquel Colares","description":"instalove"}</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet" media="screen" async="">
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PNCZP452');</script>
+
+<script>
+    window.merchant = {"id":1082917,"alias":"instalove","domain":null,"base_url":"https:\/\/instalove.catalog.yampi.io","logo_url":"https:\/\/images.yampi.me\/assets\/stores\/instalove\/uploads\/logo\/667addae02a8b.jpeg","has_mp":true,"theme":{"id":1,"alias":"rocket"},"theme_id":1,"api":{"search":"https:\/\/api.dooki.com.br\/v2\/instalove\/public\/search"},"checkout":{"base_domain":"https:\/\/instalove.pay.yampi.com.br","skip_cart":false,"items":"https:\/\/instalove.pay.yampi.com.br\/cart\/items?store_token=kmRupA9W8sQAB9Aarexl6IZIIxAcvCvmwXdEN7G2","items_json":"https:\/\/instalove.pay.yampi.com.br\/cart\/json?store_token=kmRupA9W8sQAB9Aarexl6IZIIxAcvCvmwXdEN7G2","redirect_to":"https:\/\/instalove.pay.yampi.com.br\/cart?store_token=kmRupA9W8sQAB9Aarexl6IZIIxAcvCvmwXdEN7G2","orders":"https:\/\/instalove.pay.yampi.com.br\/account\/sales","store_token":"kmRupA9W8sQAB9Aarexl6IZIIxAcvCvmwXdEN7G2","default_card":"amex","shopper_url":"https:\/\/instalove.pay.yampi.com.br\/minha-conta"},"manifest":{"name":"instalove","short_name":"instalove","start_url":"https:\/\/instalove.catalog.yampi.io?utm_source=web_app_manifest","description":"instalove","lang":"pt-BR"},"meta":{"title":"instalove","description":"instalove","icons":{"default":""}},"company":{"person_type":"personal","cnpj":null,"razao_social":null,"name":"Vitor Hugo Roberto Drumond","cpf":null,"phone":{"code":"83","formated_number":"(83) 99113-4737","number":"83991134737"},"whatsapp":{"formated_number":null,"number":null,"url":null},"email":"instalovesuporte@gmail.com","address":null,"social":{"facebook_url":null,"instagram_url":null,"youtube_url":null,"pinterest_url":null,"tiktok_url":null,"twitter_url":null}},"shipping":[],"pricing":{"first_order":{"min_order":null,"code":null,"value":null,"type_increment_value":null}},"payments":[{"active":true,"alias":"amex","name":"American Express","icon_url":"https:\/\/icons.yampi.me\/svg\/card-amex.svg","percent_discount":"0.00"},{"active":true,"alias":"visa","name":"Visa","icon_url":"https:\/\/icons.yampi.me\/svg\/card-visa.svg","percent_discount":"0.00"},{"active":true,"alias":"diners","name":"Diners","icon_url":"https:\/\/icons.yampi.me\/svg\/card-diners.svg","percent_discount":"0.00"},{"active":true,"alias":"mastercard","name":"Mastercard","icon_url":"https:\/\/icons.yampi.me\/svg\/card-mastercard.svg","percent_discount":"0.00"},{"active":true,"alias":"discover","name":"Discover","icon_url":"https:\/\/icons.yampi.me\/svg\/card-discover.svg","percent_discount":"0.00"},{"active":true,"alias":"aura","name":"Aura","icon_url":"https:\/\/icons.yampi.me\/svg\/card-aura.svg","percent_discount":"0.00"},{"active":true,"alias":"hipercard","name":"Hipercard","icon_url":"https:\/\/icons.yampi.me\/svg\/card-hipercard.svg","percent_discount":"0.00"},{"active":true,"alias":"elo","name":"Elo","icon_url":"https:\/\/icons.yampi.me\/svg\/card-elo.svg","percent_discount":"0.00"},{"active":true,"alias":"hiper","name":"Hiper","icon_url":"https:\/\/icons.yampi.me\/svg\/card-hiper.svg","percent_discount":"0.00"},{"active":true,"alias":"pix","name":"Pix","icon_url":"https:\/\/icons.yampi.me\/svg\/card-pix.svg","percent_discount":"0.00"}],"promotion":[],"pages":[],"cookies_policy":[],"meta_tags":[]};
+    window.themeConfig = {"page":"category","theme":{"alias":"rocket","params":{"color_general_primary":"#705BC2","color_general_secundary":"#FE509C","color_btn_primary_background":"#199965","color_btn_primary_text":"#FFFFFF","color_btn_secundary_background":"#666666","color_btn_secundary_text":"#FFFFFF","color_tag_background":"#C72E40","color_tag_text":"#FFFFFF","fonts_texts_family":"Work Sans","fonts_texts_size":14,"fonts_titles_family":"Work Sans","fonts_titles_weight":"medium","fonts_titles_uppercase":0,"fonts_buttons_uppercase":true,"buttons_general_format":"rounded","buttons_btn_primary_style":"solid","buttons_btn_secundary_style":"solid","grids_label_format":"rounded","grids_text_align":"left","grids_brand_enabled":0,"show_max_installment":true,"custom_css":"0","show_add_to_cart_button":0,"show_review_average":true,"cart_type":"suspended","show_cart_savings":0,"show_product_cart_savings":0,"show_dark_mode":0,"empty_cart_helper_text":"Navegue pela loja e adicione produtos.","empty_cart_text_button":"Iniciar compra","empty_cart_link_button":"0","color_palette":"0","highlight_type_payment":"promotional"}},"sections":[{"section_alias":"header","position":0,"order":0,"visible":true,"params":{"background_color":"#FFFFFF","text_color":"#222222","show_categories":true,"search_enabled":true,"topbar_enabled":false,"topbar_show_whatsapp":false,"topbar_show_phone":false,"topbar_tracking_url":"https:\/\/www.yampi.com.br\/","highlightbar_enabled":true,"highlightbar_only_home":true,"highlightbar_text":null,"highlightbar_link":null,"highlightbar_background":"#222222","highlightbar_text_color":"#FFFFFF","fixed_header":false,"promotions_text_color":"#000000","header_layout":"inline","header_icon_color":"#333333","menu_background_color":null,"menu_text_color":null,"categories_display":"categories","highlighted_promotions":false,"enable_shopping_page":false}},{"section_alias":"main_category_content","position":1,"order":1,"visible":true,"params":{"products_per_page":"24","show_sort":true,"filters_enabled":false,"show_subcategories":true,"show_price_slider":true,"show_brand":true,"show_banners":false,"slider_delay":5}},{"section_alias":"footer","position":2,"order":0,"visible":true,"params":{"background_color":"#FFFFFF","text_color":"#222222","newsletter_enabled":false,"newsletter_title":"Receba novidades e ofertas incr\u00edveis!","description_enabled":true,"show_brand":true,"show_description":false,"categories_enabled":true,"categories_type":"all","show_pages":true,"support_enabled":false,"show_whatsapp":true,"show_phone":true,"show_email":true,"social_enabled":false,"show_facebook":true,"show_instagram":true,"show_youtube":true,"show_payment_icons":true,"show_security_label":true,"show_address":false,"show_business_information":false,"show_yampi_brand":true,"show_pinterest":true,"show_tiktok":true,"show_twitter":true}}]};
+    window.data = {"content":{"data":{"meta":{"name":"Raquel Colares","description":"","seo":{"title":"","description":"","keywords":null,"canonical_url":""},"parent":[]},"data":[{"id":33499897,"sku_id":225358274,"gift_value":0,"simple":true,"has_variations":false,"is_digital":true,"warranty":0,"custom_shipping":false,"shipping_price":0,"name":"Pack V\u00eddeos Raquel Colares | +18 | 64 V\u00eddeos","slug":"pack-videos-raquel-colares-18-64-videos","sku":"MBV33M8HG","blocked_sale":false,"rating":"5","total_approved_reviews":7,"url":"https:\/\/instalove.catalog.yampi.io\/pack-videos-raquel-colares-18-64-videos\/p","url_path":"\/pack-videos-raquel-colares-18-64-videos\/p","use_different_images":null,"brand":{"data":{"id":37256306,"name":"instalove","logo_url":null}},"images":{"data":[{"url":"https:\/\/images.yampi.me\/assets\/stores\/instalove\/uploads\/images\/pack-videos-raquel-colares-18-64-videos-6684c9f6d3aaa-large.jpeg"}]},"prices":{"data":{"currency":"R$","price_cost":0,"price_cost_formated":"R$ 0,00","price":14.8,"price_formated":"R$ 19,90","price_sale":29.9,"price_sale_formated":"R$ 29,90","price_discount":14.8,"price_discount_formated":"R$ 19,90","has_promotion":true,"percent_discount":50.5,"billet":{"price":14.8,"price_formated":"R$ 19,90","discount_value":0,"discount_percent":"0.00","discount_text":"R$ 19,90 \u00e0 vista com 0.00% de desconto"},"pix":{"price":14.8,"price_formatted":"R$ 19,90","discount_value":0,"discount_percent":"0.00","discount_text":"R$ 19,90 \u00e0 vista com 0.00% de desconto"},"installments":{"data":{"max_installment":2,"max_installment_value":7.4,"amount":14.8,"text":"2x de R$ 7,40 sem juros","text_with_tax":"2x de R$ 7,40","text_discount_percent":null,"text_discount":null}}}},"flags":{"data":[]}},{"id":33499965,"sku_id":225359482,"gift_value":0,"simple":true,"has_variations":false,"is_digital":true,"warranty":0,"custom_shipping":false,"shipping_price":0,"name":"Pack de Fotos Raquel Colares | +18 | 72 Fotos","slug":"pack-de-fotos-nah-evans-18-72-fotos","sku":"H5GTQXQZK","blocked_sale":false,"rating":"5","total_approved_reviews":8,"url":"https:\/\/instalove.catalog.yampi.io\/pack-de-fotos-nah-evans-18-72-fotos\/p","url_path":"\/pack-de-fotos-nah-evans-18-72-fotos\/p","use_different_images":null,"brand":{"data":{"id":37256306,"name":"instalove","logo_url":null}},"images":{"data":[{"url":"https:\/\/images.yampi.me\/assets\/stores\/instalove\/uploads\/images\/pack-de-fotos-raquel-colares-18-72-fotos-6684ca1802e01-large.jpeg"}]},"prices":{"data":{"currency":"R$","price_cost":0,"price_cost_formated":"R$ 0,00","price":12.9,"price_formated":"R$ 14,90","price_sale":27.9,"price_sale_formated":"R$ 27,90","price_discount":12.9,"price_discount_formated":"R$ 14,90","has_promotion":true,"percent_discount":53.76,"billet":{"price":12.9,"price_formated":"R$ 14,90","discount_value":0,"discount_percent":"0.00","discount_text":"R$ 14,90 \u00e0 vista com 0.00% de desconto"},"pix":{"price":12.9,"price_formatted":"R$ 14,90","discount_value":0,"discount_percent":"0.00","discount_text":"R$ 14,90 \u00e0 vista com 0.00% de desconto"},"installments":{"data":{"max_installment":2,"max_installment_value":6.45,"amount":12.9,"text":"2x de R$ 6,45 sem juros","text_with_tax":"2x de R$ 6,45","text_discount_percent":null,"text_discount":null}}}},"flags":{"data":[]}},{"id":33680859,"sku_id":226693518,"gift_value":0,"simple":true,"has_variations":false,"is_digital":true,"warranty":0,"custom_shipping":false,"shipping_price":0,"name":"Video Chamada Raquel Colares | 15 Minutos","slug":"video-chamada-raquel-colares-15-minutos","sku":"T3X5CF6RP","blocked_sale":false,"rating":5,"total_approved_reviews":4,"url":"https:\/\/instalove.catalog.yampi.io\/video-chamada-raquel-colares-15-minutos\/p","url_path":"\/video-chamada-raquel-colares-15-minutos\/p","use_different_images":null,"brand":{"data":{"id":37256306,"name":"instalove","logo_url":null}},"images":{"data":[{"url":"https:\/\/images.yampi.me\/assets\/stores\/instalove\/uploads\/images\/video-chamada-raquel-colares-15-minutos-6684ca87a926e-large.jpeg"}]},"prices":{"data":{"currency":"R$","price_cost":0,"price_cost_formated":"R$ 0,00","price":47,"price_formated":"R$ 47,00","price_sale":100,"price_sale_formated":"R$ 100,00","price_discount":47,"price_discount_formated":"R$ 47,00","has_promotion":true,"percent_discount":53,"billet":{"price":47,"price_formated":"R$ 47,00","discount_value":0,"discount_percent":"0.00","discount_text":"R$ 47,00 \u00e0 vista com 0.00% de desconto"},"pix":{"price":47,"price_formatted":"R$ 47,00","discount_value":0,"discount_percent":"0.00","discount_text":"R$ 47,00 \u00e0 vista com 0.00% de desconto"},"installments":{"data":{"max_installment":9,"max_installment_value":5.22,"amount":47,"text":"9x de R$ 5,22 sem juros","text_with_tax":"9x de R$ 5,22","text_discount_percent":null,"text_discount":null}}}},"flags":{"data":[]}}],"slug":"raquel-colares","limit":"24","context":"category"}},"context":"category","config":{"section_alias":"main_category_content","position":1,"order":1,"visible":true,"params":{"products_per_page":"24","show_sort":true,"filters_enabled":false,"show_subcategories":true,"show_price_slider":true,"show_brand":true,"show_banners":false,"slider_delay":5}},"resultsOnly":false,"isSearch":false,"skusIds":[225358274,225359482,226693518]};
+    window.Yampi = {
+        api_domain: 'https://api.dooki.com.br',
+        page: 'category',
+        cart_token: '4931f680-5268-11ef-a08c-171b9aeef9dc',
+        env: 'production',
+        csrf_token: 'KQCdlbFNXGejMrhYTdqjblSGseou4hIUu8cqFHGi',
+        session: {
+            utm_source: '',
+            utm_campaign: '',
+            utm_medium: '',
+            utm_term: '',
+            utm_content: '',
+            utm_name: '',
+            utm_email: '',
+            zipcode: '',
+            customer: {
+                name: '',
+                email: '',
+            },
+        },
+        mixpanel: {
+            key: '__4087a793328d188d3705be7bee640b9f__'
+        },
+        thumbor: {
+            enabled: true,
+            url: 'https://images.yampi.io',
+            default: {"fitIn":"fit-in","filters":["background_color(white)","upscale()"]}
+        },
+        sentry: {
+            enabled: false,
+            tracing: false,
+            dsn: '',
+        },
+        cache: {
+            js: 10,
+        },
+        icon_url: 'https://icons.yampi.me',
+        mago_config: {
+            user_id: '4931f680-5268-11ef-a08c-171b9aeef9dc',
+            recomm_id: ''
+        }
+    };
+</script>
+
+<link rel="stylesheet" href="css/global.css" media="screen">
+<link rel="stylesheet" href="css/rocket-category.css" media="screen">
+<link rel="stylesheet" href="css/rocket-category-mobile.css" media="screen and (max-width: 700px)">
+<link rel="stylesheet" href="css/rocket.css" media="screen">
+<link rel="stylesheet" href="css/rocket-mobile.css" media="screen and (max-width: 700px)">
+
+<style>
+    0
+</style>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3W1H0TVXYW"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    gtag('js', new Date());
+
+    
+            gtag('config', 'G-3W1H0TVXYW');
+    
+    window.merchant.google = {
+        analytics: {
+            id: '',
+            version: 4,
+        }
+    }
+</script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        
+        // Global GA Tracker
+        ga('create', 'UA-45745009-5', {name: 'bubbTracker'});
+        ga('bubbTracker.send', 'pageview');
+        ga('bubbTracker.require', 'ecommerce', 'ecommerce.js');
+    </script>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "instalove",
+        "logo": "https://images.yampi.me/assets/stores/instalove/uploads/logo/667addae02a8b.jpeg",
+        "alternateName": "instalove",
+        "url": "https://instalove.catalog.yampi.io",
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+5583991134737",
+                "contactType": "customer service, sales",
+                "contactOption": "TollFree",
+                "areaServed": "BR",
+                "description": "Atendimento Telefônico"
+            },
+            {
+                "@type": "PostalAddress",
+                "addressCountry": "Brasil",
+                "postalCode": "",
+                "streetAddress": ""
+            }
+        ]
+    }
+</script>
+<script>
+        !function(e,a,n,t,s,c){e.ana||((t=e.ana=function(){t.process?t.process.apply(t,arguments):t.queue.push(arguments)}).queue=[],t.t=+new Date,(s=a.createElement(n)).async=1,s.src="https://cdn.yampi.io/ana/ana.min.js?t="+864e5*Math.ceil(new Date/864e5),(c=a.getElementsByTagName(n)[0]).parentNode.insertBefore(s,c))}(window,document,"script");
+    </script>
+
+    <script>
+        ana('init', 'rocket');
+
+        var anaParams = {
+            store_id: window.merchant.id,
+            store_profile: 'store_v2',
+            session_id: window.Yampi.cart_token
+        }
+
+                    var anaEvent = 'view-category';
+            anaParams.content_type = 'sku';
+            anaParams.content_ids = [225358274,225359482,226693518];
+        
+        ana('event', anaEvent, anaParams);
+    </script>
+<style>
+    :root {
+        /* Fixed variables */
+        --container-max-width: 1200px;
+        --box-product-max-width: 275px;
+        --default-background-color: #F5F5F5;
+        --default-opacity: .8;
+        --modal-transition-time: .5s;
+
+        --error-color: #E50F38;
+        --light-error-color: #FEF7F7;
+        --light-error-color-rgb: 254, 247, 247;
+
+        --front-end-white: #FFF;
+        --front-end-f5f5f5: #f5f5f5;
+        --pink-regular: #fa085b;
+
+        --black-dark: #222222;
+        --black-dark-rgb: 34, 34, 34;
+        --error-color-rgb: 229, 15, 56;
+        --black-medium: #666666;
+        --black-light: #999999;
+        --black-lightest: #E5E5E5;
+        --green: #00AE31;
+        --white: #FFFFFF;
+
+        /* Dinamic variables */
+        --color-general-primary: #705BC2;
+        --color-general-secundary: #FE509C;
+
+        --color-btn-primary-background: #199965;
+        --color-btn-primary-background-rgb: 25, 153, 101;
+        --color-btn-primary-background-outline: #199965;
+        --color-btn-primary-text: #FFFFFF;
+
+        --color-btn-secundary-background: #666666;
+        --color-btn-secundary-background-outline: #666666;
+        --color-btn-secundary-text: #FFFFFF;
+
+        --discount-tag-background: #C72E40;
+        --discount-tag-color: #FFFFFF;
+
+        --fonts-texts-family: Work Sans, sans-serif;
+        --fonts-texts-size: 14px;
+
+        --fonts-titles-family: Work Sans, sans-serif;
+        --fonts-titles-weight: 500;
+        --fonts-titles-uppercase: initial;
+
+        --fonts-buttons-uppercase: uppercase;
+
+        --theme-border-radius: 5px;
+        --slides-border-radius: 5px;
+
+        --label-radius: 5px;
+
+        /* Font size with base 14px */
+        --font-10: .7143rem;
+        --font-11: .7857rem;
+        --font-12: .85rem;
+        --font-13: .9285rem;
+        --font-14: 1rem;
+        --font-15: 1.07rem;
+        --font-16: 1.1428rem;
+        --font-17: 1.215rem;
+        --font-18: 1.286rem;
+        --font-20: 1.4285rem;
+        --font-21: 1.5rem;
+        --font-22: 1.5714rem;
+        --font-24: 1.7143rem;
+        --font-25: 1.7857rem;
+        --font-27: 1.9285rem;
+        --font-28: 2rem;
+        --font-30: 2.1428rem;
+        --font-48: 3.4286rem;
+
+        /* Font weights */
+        --font-regular: 400;
+        --font-medium: 500;
+        --font-bold: 700;
+        --font-black: 800;
+
+    }
+</style>
+
+    </head>
+<body class="instalove  category ">
+
+    <div id="app">
+                                <section class="section-header " id="section-header">
+    <rocket-emitter emits="header" label="Cabeçalho" order="0">
+        <header-provider :config="{" section_alias":"header","position":0,"order":0,"visible":true,"params":{"background_color":"#ffffff","text_color":"#222222","show_categories":true,"search_enabled":true,"topbar_enabled":false,"topbar_show_whatsapp":false,"topbar_show_phone":false,"topbar_tracking_url":"https:\="" \="" www.yampi.com.br\="" ","highlightbar_enabled":true,"highlightbar_only_home":true,"highlightbar_text":null,"highlightbar_link":null,"highlightbar_background":"#222222","highlightbar_text_color":"#ffffff","fixed_header":false,"promotions_text_color":"#000000","header_layout":"inline","header_icon_color":"#333333","menu_background_color":null,"menu_text_color":null,"categories_display":"categories","highlighted_promotions":false,"enable_shopping_page":false}}"="">
+            <fixed-header class="header header-0" :fixed="false" style=" --header-font-color: #222222;
+                        --header-bg-color: #FFFFFF;
+                        --header-icon-color: #333333;
+                        --menu-text-color: #222222;
+                        --menu-bg-color: #FFFFFF;">
+                
+                
+                <div class="container h-inline-container">
+                    <div class="header-content flex -between inline-header ">
+                                                <side-bar-trigger active-class="active-menu" name="menu">
+                            <svg width="15" height="11" fill="none" viewBox="0 0 15 11" class="mobile -block">
+                                <icon-store-menu-list> </icon-store-menu-list>
+                            </svg>
+                        </side-bar-trigger>
+                        
+                        <div class="logo ">
+                                                        <a href="/" class="inline-block">
+                                <img src="images/667addae02a8b.jpeg" alt="" width="auto" height="auto">
+                            </a>
+                                                    </div>
+
+                        <div class="categories">
+                            <div class="mobile -block -order-0">
+                                <ul>
+                                    
+                                                                    </ul>
+
+                                <hr>
+                            </div>
+
+                            <nav role="navigation" class="categories-menu h-navigation">
+                                                                <ul class="categories-list">
+                                    <li class="dropdown-holder category-dropdown-holder">
+                                        <span class="block">
+                                            <svg width="15" height="11" fill="#222222" viewBox="0 0 15 11">
+                                                <path d="M1.51 9.927c0 .367-.311.688-.72.688-.408 0-.72-.321-.72-.688 0-.39.312-.688.72-.688.409 0 .72.298.72.688zm11.9-.688H4.185c-.408 0-.72.298-.72.688 0 .367.312.688.72.688h9.225c.408 0 .72-.321.72-.688 0-.39-.312-.688-.72-.688zM.79 4.655c-.408 0-.72.298-.72.688 0 .366.312.687.72.687.409 0 .72-.32.72-.687 0-.39-.311-.688-.72-.688zm12.62 0H4.185c-.408 0-.72.298-.72.688 0 .366.312.687.72.687h9.225c.408 0 .72-.32.72-.687 0-.39-.312-.688-.72-.688zM.79.07C.383.07.07.368.07.758c0 .367.312.688.72.688.409 0 .72-.321.72-.688C1.51.368 1.2.07.79.07zm3.395 1.376h9.225c.408 0 .72-.321.72-.688 0-.39-.312-.688-.72-.688H4.185c-.408 0-.72.298-.72.688 0 .367.312.688.72.688z"></path>
+                                                <path clip-rule="evenodd" d="M0 .758C0 .326.347 0 .79 0c.444 0 .79.326.79.758 0 .407-.344.758-.79.758-.445 0-.79-.35-.79-.758zM.79.141C.418.14.14.41.14.758c0 .326.28.617.65.617.371 0 .65-.29.65-.617C1.44.41 1.163.141.79.141zm2.605.617c0-.432.346-.758.79-.758h9.225c.443 0 .79.326.79.758 0 .407-.345.758-.79.758H4.185c-.445 0-.79-.35-.79-.758zm.79-.617c-.372 0-.65.27-.65.617 0 .326.28.617.65.617h9.225c.37 0 .65-.29.65-.617 0-.348-.278-.617-.65-.617H4.185zM0 5.343c0-.432.347-.758.79-.758.444 0 .79.326.79.758 0 .407-.344.758-.79.758C.345 6.1 0 5.75 0 5.343zm.79-.618c-.372 0-.65.27-.65.618 0 .326.28.617.65.617.371 0 .65-.291.65-.617 0-.348-.277-.618-.65-.618zm2.605.618c0-.432.346-.758.79-.758h9.225c.443 0 .79.326.79.758 0 .407-.345.758-.79.758H4.185c-.445 0-.79-.351-.79-.758zm.79-.618c-.372 0-.65.27-.65.618 0 .326.28.617.65.617h9.225c.37 0 .65-.291.65-.617 0-.348-.278-.618-.65-.618H4.185zM.79 9.31c-.372 0-.65.27-.65.617 0 .327.28.618.65.618.371 0 .65-.291.65-.618 0-.348-.277-.617-.65-.617zM0 9.927c0-.431.347-.758.79-.758.444 0 .79.327.79.758 0 .407-.344.758-.79.758-.445 0-.79-.35-.79-.758zm3.395 0c0-.431.346-.758.79-.758h9.225c.443 0 .79.327.79.758 0 .407-.345.758-.79.758H4.185c-.445 0-.79-.35-.79-.758zm.79-.617c-.372 0-.65.27-.65.617 0 .327.28.618.65.618h9.225c.37 0 .65-.291.65-.618 0-.348-.278-.617-.65-.617H4.185z"></path>
+                                            </svg>
+                                            <span>Categorias</span>
+                                        </span>
+                                        <category-subcategory class="dropdown category-subcategory-menu">
+    <div class="holder-categories -is-loading">
+        <div class="mobile -block">
+            <div class="close-dropdown inline-block -ml">
+                Voltar
+            </div>
+
+            <div class="category-title">
+                Categorias
+            </div>
+        </div>
+
+        <ul>
+                            <li class="dropdown-holder item-category evelyn-alves">
+                    <a class="block" href="/evelyn-alves">
+                        Evelyn Alves
+                    </a>
+
+                                    </li>
+                            <li class="dropdown-holder item-category melissa-skinn">
+                    <a class="block" href="/melissa-skinn">
+                        Melissa Skinn
+                    </a>
+
+                                    </li>
+                            <li class="dropdown-holder item-category nicole-santos">
+                    <a class="block" href="/nicole-santos">
+                        Nicole Santos
+                    </a>
+
+                                    </li>
+                            <li class="dropdown-holder item-category rafaela-becker">
+                    <a class="block" href="/rafaela-becker">
+                        Rafaela Becker
+                    </a>
+
+                                    </li>
+                            <li class="dropdown-holder item-category raquel-colares">
+                    <a class="block" href="/raquel-colares">
+                        Raquel Colares
+                    </a>
+
+                                    </li>
+                    </ul>
+    </div>
+</category-subcategory>                                    </li>
+                                </ul>
+                                
+                                
+                                                                
+
+                                                            </nav>
+                        </div>
+
+                        <div class="holder-search">
+                                                        <search-bar></search-bar>
+                                                    </div>
+
+
+                        <div class="header-content-right">
+                            
+                            <div class="mini-cart-holder" style="--cart-icon-color: #333333;">
+                                <rocket-emitter emits="cart" label="Carrinho de compras" :show-stroke="false">
+                                    <mini-cart :cart-type="'suspended'" :show-cart-savings="false" :show-product-cart-savings="false" :empty-cart-helper-text="'Navegue pela loja e adicione produtos.'" :empty-cart-text-button="'Iniciar compra'" :empty-cart-link-button="'0'" :highlighted-price="'promotional'">
+                                </mini-cart></rocket-emitter>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fixed-header>
+        </header-provider>
+    </rocket-emitter>
+</section>
+                                <section class="category-content">
+    <category-content class="main_category_content-1" products-per-page="24" v-slot="{ newHtml, updateFilters, updateOrderBy, updateGrid, updateCurrentPage, selectedOrder, paginate, isMosaic, isMobile }">
+        <div class="breadcrumbs container">
+    <ul class="inline crumbs">
+        <li>
+            <a href="/">
+                Página Inicial
+            </a>
+        </li>
+
+                    <li><span class="breadcrumb-divider"></span></li>
+            <li>
+                <a href="#">
+                                            Raquel Colares
+                                    </a>
+            </li>
+            </ul>
+</div>
+
+        <div class="flex-holder container flex">
+            
+            <div class="holder-results">
+                <v-runtime-template v-if="newHtml" :template="newHtml"></v-runtime-template>
+                <div v-else="">
+                    <div class="flex -between -vtop">
+    <h1 class="theme-title">
+        Raquel Colares
+    </h1>
+
+            <div class="select-order flex -vcenter -hend">
+            <span class="-title">
+                ORDENAR POR:
+            </span>
+
+            <select is="custom-select" id="category-order-select" name="category-order" :value="selectedOrder" @change="updateOrderBy">
+                <option value="relevance">Relevância</option>
+                <option value="best_sellers">Mais vendidos</option>
+                <option value="highest_price">Maior preço</option>
+                <option value="lowest_price">Menor preço</option>
+                <option value="newest">Lançamentos</option>
+                <option value="rating">Melhor avaliação</option>
+                <option value="name_asc">A-Z</option>
+                <option value="name_desc">Z-A</option>
+            </select>
+        </div>
+    </div>
+
+
+    <category-options :is-mosaic="isMosaic" :show-sort=" true" :show-filters=" false" :selected-order="selectedOrder" @change="updateOrderBy" @change-grid="updateGrid" ref="categoryOptions"></category-options>
+
+
+
+    <div class="products-list flex">
+            <div class="box-product ">
+    <a href="https://go.tribopay.com/mzbgd" class="block -clean">
+        <div class="holder-image relative-tags">
+            <discount-tag :value="50.5"></discount-tag>
+
+            <div class="image-ratio">
+                                    <img v-lazyload="" class="-loading" alt="Pack Vídeos Raquel Colares | +18 | 64 Vídeos" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.yampi.io/B1468XF9uHbLO6qcu10LCO8sayU=/fit-in/275x275/filters:background_color(white):upscale()/https://images.yampi.me/assets/stores/instalove/uploads/images/pack-videos-raquel-colares-18-64-videos-6684c9f6d3aaa-large.jpeg" width="auto" height="auto">
+                
+            </div>
+
+            
+        </div>
+
+        <div class="holder-info">
+            <flags :default-flags="[]"></flags>
+
+                            <average-rating 64="" :product="{" id":33499897,"sku_id":225358274,"gift_value":0,"simple":true,"has_variations":false,"is_digital":true,"warranty":0,"custom_shipping":false,"shipping_price":0,"name":"pack="" v\u00eddeos="" raquel="" colares="" |="" +18="" v\u00eddeos","slug":"pack-videos-raquel-colares-18-64-videos","sku":"mbv33m8hg","blocked_sale":false,"rating":"5","total_approved_reviews":7,"url":"https:\="" \="" instalove.catalog.yampi.io\="" pack-videos-raquel-colares-18-64-videos\="" p","url_path":"\="" p","use_different_images":null,"brand":{"data":{"id":37256306,"name":"instalove","logo_url":null}},"images":{"data":[{"url":"https:\="" images.yampi.me\="" assets\="" stores\="" instalove\="" uploads\="" images\="" pack-videos-raquel-colares-18-64-videos-6684c9f6d3aaa-large.jpeg"}]},"prices":{"data":{"currency":"r$","price_cost":0,"price_cost_formated":"r$="" 0,00","price":14.8,"price_formated":"r$="" 19,90","price_sale":29.9,"price_sale_formated":"r$="" 29,90","price_discount":14.8,"price_discount_formated":"r$="" 19,90","has_promotion":true,"percent_discount":50.5,"billet":{"price":14.8,"price_formated":"r$="" 19,90","discount_value":0,"discount_percent":"0.00","discount_text":"r$="" 19,90="" \u00e0="" vista="" com="" 0.00%="" de="" desconto"},"pix":{"price":14.8,"price_formatted":"r$="" desconto"},"installments":{"data":{"max_installment":2,"max_installment_value":7.4,"amount":14.8,"text":"2x="" r$="" 7,40="" sem="" juros","text_with_tax":"2x="" 7,40","text_discount_percent":null,"text_discount":null}}}},"flags":{"data":[]}}"="" class="" :is-grid="true"></average-rating>
+            
+            
+            <div class="product-name ellipsis-multiline l2">
+                Pack Vídeos Raquel Colares | +18 | 64 Vídeos
+            </div>
+
+            <div class="product-prices">
+                <div class="flex -vcenter -wrap">
+                                            <span class="product-old-price old-price">
+                            R$ 29,90
+                        </span>
+                                        <span class="product-actual-price price">
+                                                    <div>
+                                R$ 19,90
+                                                                    <span class="payment-type"></span>
+                                                            </div>
+                        
+                                            </span>
+                </div>
+
+
+                                    <installments-text 64="" :product="{" id":33499897,"sku_id":225358274,"gift_value":0,"simple":true,"has_variations":false,"is_digital":true,"warranty":0,"custom_shipping":false,"shipping_price":0,"name":"pack="" v\u00eddeos="" raquel="" colares="" |="" +18="" v\u00eddeos","slug":"pack-videos-raquel-colares-18-64-videos","sku":"mbv33m8hg","blocked_sale":false,"rating":"5","total_approved_reviews":7,"url":"https:\="" \="" instalove.catalog.yampi.io\="" pack-videos-raquel-colares-18-64-videos\="" p","url_path":"\="" p","use_different_images":null,"brand":{"data":{"id":37256306,"name":"instalove","logo_url":null}},"images":{"data":[{"url":"https:\="" images.yampi.me\="" assets\="" stores\="" instalove\="" uploads\="" images\="" pack-videos-raquel-colares-18-64-videos-6684c9f6d3aaa-large.jpeg"}]},"prices":{"data":{"currency":"r$","price_cost":0,"price_cost_formated":"r$="" 0,00","price":14.8,"price_formated":"r$="" 19,90","price_sale":29.9,"price_sale_formated":"r$="" 29,90","price_discount":14.8,"price_discount_formated":"r$="" 19,90","has_promotion":true,"percent_discount":50.5,"billet":{"price":14.8,"price_formated":"r$="" 19,90","discount_value":0,"discount_percent":"0.00","discount_text":"r$="" 19,90="" \u00e0="" vista="" com="" 0.00%="" de="" desconto"},"pix":{"price":14.8,"price_formatted":"r$="" desconto"},"installments":{"data":{"max_installment":2,"max_installment_value":7.4,"amount":14.8,"text":"2x="" r$="" 7,40="" sem="" juros","text_with_tax":"2x="" 7,40","text_discount_percent":null,"text_discount":null}}}},"flags":{"data":[]}}"=""></installments-text>
+                
+            </div>
+        </div>
+    </a>
+</div>
+            <div class="box-product ">
+    <a href="https://go.tribopay.com/pzpvw" class="block -clean">
+        <div class="holder-image relative-tags">
+            <discount-tag :value="53.76"></discount-tag>
+
+            <div class="image-ratio">
+                                    <img v-lazyload="" class="-loading" alt="Pack de Fotos Raquel Colares | +18 | 72 Fotos" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.yampi.io/mKm5NR8nub3bi3o5M_VWvgzo0xw=/fit-in/275x275/filters:background_color(white):upscale()/https://images.yampi.me/assets/stores/instalove/uploads/images/pack-de-fotos-raquel-colares-18-72-fotos-6684ca1802e01-large.jpeg" width="auto" height="auto">
+                
+            </div>
+
+            
+        </div>
+
+        <div class="holder-info">
+            <flags :default-flags="[]"></flags>
+
+                            <average-rating 72="" :product="{" id":33499965,"sku_id":225359482,"gift_value":0,"simple":true,"has_variations":false,"is_digital":true,"warranty":0,"custom_shipping":false,"shipping_price":0,"name":"pack="" de="" fotos="" raquel="" colares="" |="" +18="" fotos","slug":"pack-de-fotos-nah-evans-18-72-fotos","sku":"h5gtqxqzk","blocked_sale":false,"rating":"5","total_approved_reviews":8,"url":"https:\="" \="" instalove.catalog.yampi.io\="" pack-de-fotos-nah-evans-18-72-fotos\="" p","url_path":"\="" p","use_different_images":null,"brand":{"data":{"id":37256306,"name":"instalove","logo_url":null}},"images":{"data":[{"url":"https:\="" images.yampi.me\="" assets\="" stores\="" instalove\="" uploads\="" images\="" pack-de-fotos-raquel-colares-18-72-fotos-6684ca1802e01-large.jpeg"}]},"prices":{"data":{"currency":"r$","price_cost":0,"price_cost_formated":"r$="" 0,00","price":12.9,"price_formated":"r$="" 14,90","price_sale":27.9,"price_sale_formated":"r$="" 27,90","price_discount":12.9,"price_discount_formated":"r$="" 14,90","has_promotion":true,"percent_discount":53.76,"billet":{"price":12.9,"price_formated":"r$="" 14,90","discount_value":0,"discount_percent":"0.00","discount_text":"r$="" 14,90="" \u00e0="" vista="" com="" 0.00%="" desconto"},"pix":{"price":12.9,"price_formatted":"r$="" desconto"},"installments":{"data":{"max_installment":2,"max_installment_value":6.45,"amount":12.9,"text":"2x="" r$="" 6,45="" sem="" juros","text_with_tax":"2x="" 6,45","text_discount_percent":null,"text_discount":null}}}},"flags":{"data":[]}}"="" class="" :is-grid="true"></average-rating>
+            
+            
+            <div class="product-name ellipsis-multiline l2">
+                Pack de Fotos Raquel Colares | +18 | 72 Fotos
+            </div>
+
+            <div class="product-prices">
+                <div class="flex -vcenter -wrap">
+                                            <span class="product-old-price old-price">
+                            R$ 27,90
+                        </span>
+                                        <span class="product-actual-price price">
+                                                    <div>
+                                R$ 14,90
+                                                                    <span class="payment-type"></span>
+                                                            </div>
+                        
+                                            </span>
+                </div>
+
+
+                                    <installments-text 72="" :product="{" id":33499965,"sku_id":225359482,"gift_value":0,"simple":true,"has_variations":false,"is_digital":true,"warranty":0,"custom_shipping":false,"shipping_price":0,"name":"pack="" de="" fotos="" raquel="" colares="" |="" +18="" fotos","slug":"pack-de-fotos-nah-evans-18-72-fotos","sku":"h5gtqxqzk","blocked_sale":false,"rating":"5","total_approved_reviews":8,"url":"https:\="" \="" instalove.catalog.yampi.io\="" pack-de-fotos-nah-evans-18-72-fotos\="" p","url_path":"\="" p","use_different_images":null,"brand":{"data":{"id":37256306,"name":"instalove","logo_url":null}},"images":{"data":[{"url":"https:\="" images.yampi.me\="" assets\="" stores\="" instalove\="" uploads\="" images\="" pack-de-fotos-raquel-colares-18-72-fotos-6684ca1802e01-large.jpeg"}]},"prices":{"data":{"currency":"r$","price_cost":0,"price_cost_formated":"r$="" 0,00","price":12.9,"price_formated":"r$="" 14,90","price_sale":27.9,"price_sale_formated":"r$="" 27,90","price_discount":12.9,"price_discount_formated":"r$="" 14,90","has_promotion":true,"percent_discount":53.76,"billet":{"price":12.9,"price_formated":"r$="" 14,90","discount_value":0,"discount_percent":"0.00","discount_text":"r$="" 14,90="" \u00e0="" vista="" com="" 0.00%="" desconto"},"pix":{"price":12.9,"price_formatted":"r$="" desconto"},"installments":{"data":{"max_installment":2,"max_installment_value":6.45,"amount":12.9,"text":"2x="" r$="" 6,45="" sem="" juros","text_with_tax":"2x="" 6,45","text_discount_percent":null,"text_discount":null}}}},"flags":{"data":[]}}"=""></installments-text>
+                
+            </div>
+        </div>
+    </a>
+</div>
+            <div class="box-product ">
+    <a href="https://go.tribopay.com/xem7t" class="block -clean">
+        <div class="holder-image relative-tags">
+            <discount-tag :value="53"></discount-tag>
+
+            <div class="image-ratio">
+                                    <img v-lazyload="" class="-loading" alt="Video Chamada Raquel Colares | 15 Minutos" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.yampi.io/fNZNhj-j3TeJ9-1gK7Kw41HvLe0=/fit-in/275x275/filters:background_color(white):upscale()/https://images.yampi.me/assets/stores/instalove/uploads/images/video-chamada-raquel-colares-15-minutos-6684ca87a926e-large.jpeg" width="auto" height="auto">
+                
+            </div>
+
+            
+        </div>
+
+        <div class="holder-info">
+            <flags :default-flags="[]"></flags>
+
+                            <average-rating 15="" :product="{" id":33680859,"sku_id":226693518,"gift_value":0,"simple":true,"has_variations":false,"is_digital":true,"warranty":0,"custom_shipping":false,"shipping_price":0,"name":"video="" chamada="" raquel="" colares="" |="" minutos","slug":"video-chamada-raquel-colares-15-minutos","sku":"t3x5cf6rp","blocked_sale":false,"rating":5,"total_approved_reviews":4,"url":"https:\="" \="" instalove.catalog.yampi.io\="" video-chamada-raquel-colares-15-minutos\="" p","url_path":"\="" p","use_different_images":null,"brand":{"data":{"id":37256306,"name":"instalove","logo_url":null}},"images":{"data":[{"url":"https:\="" images.yampi.me\="" assets\="" stores\="" instalove\="" uploads\="" images\="" video-chamada-raquel-colares-15-minutos-6684ca87a926e-large.jpeg"}]},"prices":{"data":{"currency":"r$","price_cost":0,"price_cost_formated":"r$="" 0,00","price":47,"price_formated":"r$="" 47,00","price_sale":100,"price_sale_formated":"r$="" 100,00","price_discount":47,"price_discount_formated":"r$="" 47,00","has_promotion":true,"percent_discount":53,"billet":{"price":47,"price_formated":"r$="" 47,00","discount_value":0,"discount_percent":"0.00","discount_text":"r$="" 47,00="" \u00e0="" vista="" com="" 0.00%="" de="" desconto"},"pix":{"price":47,"price_formatted":"r$="" desconto"},"installments":{"data":{"max_installment":9,"max_installment_value":5.22,"amount":47,"text":"9x="" r$="" 5,22="" sem="" juros","text_with_tax":"9x="" 5,22","text_discount_percent":null,"text_discount":null}}}},"flags":{"data":[]}}"="" class="" :is-grid="true"></average-rating>
+            
+            
+            <div class="product-name ellipsis-multiline l2">
+                Video Chamada Raquel Colares | 15 Minutos
+            </div>
+
+            <div class="product-prices">
+                <div class="flex -vcenter -wrap">
+                                            <span class="product-old-price old-price">
+                            R$ 100,00
+                        </span>
+                                        <span class="product-actual-price price">
+                                                    <div>
+                                R$ 47,00
+                                                                    <span class="payment-type"></span>
+                                                            </div>
+                        
+                                            </span>
+                </div>
+
+
+                                    <installments-text 15="" :product="{" id":33680859,"sku_id":226693518,"gift_value":0,"simple":true,"has_variations":false,"is_digital":true,"warranty":0,"custom_shipping":false,"shipping_price":0,"name":"video="" chamada="" raquel="" colares="" |="" minutos","slug":"video-chamada-raquel-colares-15-minutos","sku":"t3x5cf6rp","blocked_sale":false,"rating":5,"total_approved_reviews":4,"url":"https:\="" \="" instalove.catalog.yampi.io\="" video-chamada-raquel-colares-15-minutos\="" p","url_path":"\="" p","use_different_images":null,"brand":{"data":{"id":37256306,"name":"instalove","logo_url":null}},"images":{"data":[{"url":"https:\="" images.yampi.me\="" assets\="" stores\="" instalove\="" uploads\="" images\="" video-chamada-raquel-colares-15-minutos-6684ca87a926e-large.jpeg"}]},"prices":{"data":{"currency":"r$","price_cost":0,"price_cost_formated":"r$="" 0,00","price":47,"price_formated":"r$="" 47,00","price_sale":100,"price_sale_formated":"r$="" 100,00","price_discount":47,"price_discount_formated":"r$="" 47,00","has_promotion":true,"percent_discount":53,"billet":{"price":47,"price_formated":"r$="" 47,00","discount_value":0,"discount_percent":"0.00","discount_text":"r$="" 47,00="" \u00e0="" vista="" com="" 0.00%="" de="" desconto"},"pix":{"price":47,"price_formatted":"r$="" desconto"},"installments":{"data":{"max_installment":9,"max_installment_value":5.22,"amount":47,"text":"9x="" r$="" 5,22="" sem="" juros","text_with_tax":"9x="" 5,22","text_discount_percent":null,"text_discount":null}}}},"flags":{"data":[]}}"=""></installments-text>
+                
+            </div>
+        </div>
+    </a>
+</div>
+        
+            <div class="box-product -clear"></div>
+        <div class="box-product -clear"></div>
+        <div class="box-product -clear"></div>
+    </div>
+    <loader class="paginate-loader" v-if="paginate.loading" :height="40" :width="50"></loader>
+
+    <paginate v-else-if="paginate.pageCount > 1" :page-count="paginate.pageCount" :pager-count="isMobile ? 5 : 7" :value="paginate.currentPage" :disabled="false" @input="updateCurrentPage($event)"></paginate>
+                </div>
+            </div>
+        </div>
+    </category-content>
+</section>
+                                <rocket-emitter emits="footer" label="Rodapé" order="0">
+    <vue-section class="
+            footer
+            top-line
+            
+        " style="
+            --footer-font-color: #222222;
+            --footer-bg-color: #FFFFFF;
+            --footer-opacity-color: rgba(34, 34, 34, 0.5);
+            --footer-hr-color: rgba(34, 34, 34, 0.1);
+        " :delay="500">
+            
+        <div class="holder-footer footer-0">
+            <div class="container">
+                <div class="holder-footer-section section-1 flex -hcenter">
+                                            <div class="holder-footer-logo">
+                                                            <div class="logo">
+                                    <img src="images/667addae02a8b.jpeg" alt="" width="auto" height="auto">
+                                </div>
+                            
+                                                    </div>
+                    
+                    <div class="holder-footer-info flex">
+                                                    <div class="-categories">
+                                <div class="-title">Categorias</div>
+                                <expandable title="Categorias">
+                                    <ul>
+                                                                                    <li><a href="/raquel-colares">Raquel Colares</a></li>
+                                                                                    <li><a href="/rafaela-becker">Rafaela Becker</a></li>
+                                                                                    <li><a href="/evelyn-alves">Evelyn Alves</a></li>
+                                                                                    <li><a href="/nicole-santos">Nicole Santos</a></li>
+                                                                                    <li><a href="/melissa-skinn">Melissa Skinn</a></li>
+                                                                            </ul>
+                                </expandable>
+                            </div>
+                        
+                        
+                        
+                                            </div>
+                </div>
+
+                                    <div class="holder-footer-section section-2">
+                                                    <span class="holder-cards">
+                                <ul class="inline">
+                                                                            <li>
+                                            <img v-lazyload="" alt="amex" width="35" height="24" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://icons.yampi.me/svg/card-amex.svg">
+                                        </li>
+                                                                            <li>
+                                            <img v-lazyload="" alt="visa" width="35" height="24" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://icons.yampi.me/svg/card-visa.svg">
+                                        </li>
+                                                                            <li>
+                                            <img v-lazyload="" alt="diners" width="35" height="24" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://icons.yampi.me/svg/card-diners.svg">
+                                        </li>
+                                                                            <li>
+                                            <img v-lazyload="" alt="mastercard" width="35" height="24" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://icons.yampi.me/svg/card-mastercard.svg">
+                                        </li>
+                                                                            <li>
+                                            <img v-lazyload="" alt="discover" width="35" height="24" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://icons.yampi.me/svg/card-discover.svg">
+                                        </li>
+                                                                            <li>
+                                            <img v-lazyload="" alt="aura" width="35" height="24" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://icons.yampi.me/svg/card-aura.svg">
+                                        </li>
+                                                                            <li>
+                                            <img v-lazyload="" alt="hipercard" width="35" height="24" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://icons.yampi.me/svg/card-hipercard.svg">
+                                        </li>
+                                                                            <li>
+                                            <img v-lazyload="" alt="elo" width="35" height="24" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://icons.yampi.me/svg/card-elo.svg">
+                                        </li>
+                                                                            <li>
+                                            <img v-lazyload="" alt="hiper" width="35" height="24" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://icons.yampi.me/svg/card-hiper.svg">
+                                        </li>
+                                                                            <li>
+                                            <img v-lazyload="" alt="pix" width="35" height="24" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://icons.yampi.me/svg/card-pix.svg">
+                                        </li>
+                                                                    </ul>
+                            </span>
+                        
+                                                    <i class="icon icon-security"></i>
+                                            </div>
+                
+                <div class="holder-footer-section section-3 flex -hcenter">
+                    
+                                            <div class="holder-yampi flex">
+                            <span>Usamos</span>
+                            <a href="https://www.yampi.com.br?utm_source=store_v2_footer&amp;utm_campaign=yampi_brand_footer_link" target="_blank" rel="noreferrer nofollow" class="yampi">
+                                <img v-lazyload="" alt="Yampi - Plataforma de E-commerce" width="71" height="24" class="h-va-middle h-inline-block h-ml10" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://icons.yampi.me/svg/yampi.svg">
+                            </a>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </vue-section>
+</rocket-emitter>
+            
+    <smooth-scroll :display-at="300">
+        <template slot-scope="{ scroll }">
+            <div class="scroll-top" @click="scroll">
+                <i class="icon icon-scroll-top"></i>
+            </div>
+        </template>
+    </smooth-scroll>
+    
+    
+        </div>
+
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-1173a7bb9742e987ab2","applicationID":"765085969","transactionName":"NlQEYUJSDBFUBkdZWQ8eJ1ZEWg0MGjlyQEY9eRJBQG8hDVsRQV9aDVQURmxgBwNHBltzWQ9FFFpcXwcQdQZSRFMGXhRM","queueTime":0,"applicationTime":171,"atts":"GhMHFwpIHx8=","errorBeacon":"bam.nr-data.net","agent":""}</script><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" data-cf-beacon="{" rayid":"8adf01ea5b4e664b","servertiming":{"name":{"cfl4":true}},"version":"2024.7.0","token":"dec6731b6be14a58a1f5541d136688c3"}"="" crossorigin="anonymous"></script>
+
+
+</body></html>
